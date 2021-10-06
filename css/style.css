@@ -1,0 +1,289 @@
+:root {--main-color: #42c9c9d1;}
+
+
+/* overriding bootstrap start................................................................................................. */
+/* navbar brand */
+.navbar-brand span {color: var(--main-color);}
+/* navbar links */
+.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link, .dropdown-divider,
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    border-radius: .25rem;
+    background-color: #0b0e0e;
+    color: #fff;
+}
+/* dropdown menu color */
+/* navbar active link hover color */
+/* dropdown divider color */
+.dropdown-item:focus, .dropdown-item:hover,
+.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link,
+.dropdown-divider {
+    background-color: var(--main-color);
+    color: #333;
+}
+
+/* dropdown menu  */
+.dropdown-menu {min-width: 13rem;}
+/* dropdown border */
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    border-top: solid 3px var(--main-color);
+}
+/* dropdown links */
+.dropdown-item {
+    padding: .5rem 1rem;
+    transition:padding .5s;
+}
+.dropdown-item:hover {padding-left: 1.5rem;}
+/* search */
+.btn-outline-success {
+    color: var(--main-color);
+    border-color: var(--main-color);
+}
+.btn-outline-success:hover,
+.btn-check:active+.btn-outline-success, .btn-check:checked+.btn-outline-success, .btn-outline-success.active, .btn-outline-success.dropdown-toggle.show, .btn-outline-success:active {
+    color: #fff;
+    border-color: var(--main-color);
+    background-color: var(--main-color);
+}
+.btn-check:focus+.btn-outline-success, .btn-outline-success:focus {
+    box-shadow: 0 0 0 0.25rem rgb(66 201 201 / 50%);
+}
+/* overriding bootstrap end............................................................................................................... */
+
+/* navbar media query start */
+@media (max-width: 576px) {
+    .navbar-dark .navbar-nav .nav-link {
+        padding: 10px;
+    }
+}
+/* navbar media query end */
+
+/* option-box start */
+.option-box {
+    position: fixed;
+    top: 70px;
+    color: #fff;
+    z-index: 9999;
+}
+.option-box .gear {
+    padding: 5px;
+    background-color: var(--main-color);
+    color: #fff;
+    cursor: pointer;
+}
+.option-box .option-color {
+    display: none;
+    float: right;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    width: 200px;
+    border: solid 2px var(--main-color);
+}
+.option-box .option-color ul li {
+    width: 20px;
+    height: 20px;
+    background-color: var(--main-color);
+    cursor: pointer;
+}
+/* option-box end */
+
+
+/* about start */
+.about h1 span {color: var(--main-color);}
+.about .lead {color: #888;}
+/* about end */
+
+/* features start */
+.features {background-color: #eee;}
+i {color: var(--main-color);}
+/* features end */
+
+/* testimonials start */
+.testimonials span {
+    font-size: 1.125rem;
+    color: var(--main-color);
+} 
+.testimonials .carousel-inner {
+    min-height: 85px;
+}
+/* overriding bootstrap */
+.testimonials .carousel-indicators {
+    position: static;
+    margin-top: 25px;
+}
+.testimonials .carousel-indicators [data-bs-target] {
+    width: 80px;
+    height: 80px;
+    border: solid 2px transparent;
+    border-radius: 50%;
+    text-indent: 0;
+    transition: .5s;
+    margin-right: 10px;
+}
+.testimonials .carousel-indicators [data-bs-target]:active, 
+.testimonials .carousel-indicators [data-bs-target]:focus {
+    border: solid 2px var(--main-color);
+}
+.testimonials .carousel-indicators [data-bs-target] img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+/* testimonials end */
+
+/* price start */
+.price {background-color: #eee;}
+.price .price-box {
+    background-color: #fff;
+    border: solid 1px #ddd;
+    padding: 10px;
+}
+.price .price-box p {
+    color: #666;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 100px;
+    background-color: #f3f3f3;
+    transition: .7s ease;    border: solid 2px #fff;
+}
+.price .price-box:hover p {
+    transform: scale(1.2) rotate(360deg);
+    border: solid 2px #dfdfdf;
+}
+.price .price-box ul {line-height: 3rem;}
+.btn-info,
+.btn-info:hover,
+.btn-check:focus+.btn-info, .btn-info:focus {
+    color: #fff;
+}
+/* price end */
+
+/* team start */
+.team {
+    min-height: 600px;
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+}
+.team .content {
+    background-color: rgba(0,0,0,.4);
+    color: #fff;
+    min-height: 600px;
+}
+.team .person img {
+    width: 200px;
+    height: 200px;
+}
+.team .person i {
+    color: #fff;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+/* team end */
+
+/* subscribe start */
+.subscribe {background-color: #eee;}
+.subscribe h2 {
+    color: #888;
+    letter-spacing: 2px;
+}
+.subscribe form input {width: 300px;}
+.subscribe form button i {
+    color: #fff;
+}
+/* subscribe end */
+
+/* statistics start */
+.statistics {
+    background-image: url(../images/statistics.jpg);
+    background-size: cover;
+    min-height: 500px;
+}
+.statistics .data {
+    background-color: rgba(0,0,0,.7);
+    min-height: 500px;
+    color: #fff;
+}
+.statistics .data .stats, 
+.statistics .data .stats i,
+.statistics .data .stats span {
+    color: #b6b5b5;
+    transition: .3s;
+}
+.statistics .data .stats:hover, 
+.statistics .data .stats:hover i, 
+.statistics .data .stats:hover span {
+    color: #fff;
+}
+/* statistics end */
+
+/* skills start */
+.skills .progress {height: 32px;}
+.skills .progress-bar {
+    font-size: 16px;
+    text-indent: 10px;
+}
+/* skills end */
+
+/* contact start */
+.contact {
+    min-height: 500px;
+    background-image: url(../images/contact.jpg);
+    background-size: cover;
+    background-color: rgba(0,0,0,.6);
+    background-blend-mode: color;
+    color: #ddd;
+}
+.contact i {color: #fff;}
+.contact textarea {height: 120px;}
+.contact .form-control {
+    color: #fff;
+    background-color: rgba(82, 78, 78, 0.7);
+    border: solid 1px rgba(255, 255, 255, .1);
+}
+.contact .btn {
+    color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(148, 143, 143, 0.7);
+    border: solid 1px rgba(255, 255, 255, .1);
+}
+.contact .form-control::placeholder {
+    color: rgba(255, 255, 255, .3);
+}
+.contact .form-control:focus,
+.btn-check:active+.btn-primary:focus, .btn-check:checked+.btn-primary:focus, .btn-primary.active:focus, .btn-primary:active:focus, .show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.25rem rgb(255 255 255 / 25%);
+}
+/* contact end */
+
+/* clients start */
+.clients {background-color: #eee;}
+.clients img {
+    width: 50px;
+    opacity: .5;
+    transition: .4s;
+} 
+.clients img:hover {opacity: 1;}
+/* clients end */
+
+/* footer start */
+footer {background-color: #333; color: #aaa;}
+footer a:hover {color: #fff;}
+footer h3 {color: var(--main-color); letter-spacing: 1px;}
+footer .first .icons .d-flex {width: 60%;}
+footer .first img {width: 30px;}
+footer .sitemap {display: grid; grid-template-columns: repeat(2, 1fr);}
+footer .sitemap li,
+footer .icons img {
+    opacity: .5;
+}
+footer .sitemap li:hover,
+footer .icons img:hover {
+    opacity: 1;
+}
+footer .media img {width: 50px; height: 50px;}
+footer .our-work .img-thumbnail {border: solid 1px #666;}
+footer .copy span {color: var(--main-color);
+}
+/* footer end */

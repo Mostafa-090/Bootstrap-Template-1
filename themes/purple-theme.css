@@ -1,0 +1,210 @@
+
+/* this file contains only the colors */
+
+
+:root {
+    --main-color: #7B3267;
+}
+
+
+/* overriding bootstrap start................................................................................................. */
+/* navbar brand */
+.navbar-brand span {
+    color: var(--main-color);
+}
+/* navbar links */
+.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link, .dropdown-divider,
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    background-color: #0b0e0e;
+    color: #fff;
+}
+/* dropdown menu color */
+/* navbar active link hover color */
+/* dropdown divider color */
+.dropdown-item:focus, .dropdown-item:hover,
+.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link,
+.dropdown-divider {
+    background-color: var(--main-color);
+    color: #333;
+}
+/* dropdown border */
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    border-top: solid 3px var(--main-color);
+}
+/* dropdown links */
+.btn-outline-success {
+    color: var(--main-color);
+    border-color: var(--main-color);
+}
+.btn-outline-success:hover,
+.btn-check:active+.btn-outline-success, .btn-check:checked+.btn-outline-success, .btn-outline-success.active, .btn-outline-success.dropdown-toggle.show, .btn-outline-success:active {
+    color: #fff;
+    border-color: var(--main-color);
+    background-color: var(--main-color);
+}
+.btn-check:focus+.btn-outline-success, .btn-outline-success:focus,
+.btn-check:active+.btn-outline-success:focus, .btn-check:checked+.btn-outline-success:focus, .btn-outline-success.active:focus, .btn-outline-success.dropdown-toggle.show:focus, .btn-outline-success:active:focus {
+    box-shadow: 0 0 0 0.25rem rgb(123 50 103 / 50%);
+}
+/* overriding bootstrap end............................................................................................................... */
+
+/* option-box start */
+.option-box {
+    color: #fff;
+}
+.option-box .gear {
+    background-color: var(--main-color);
+    color: #fff;
+}
+.option-box .option-color {
+    background-color: #333;
+    color: #fff;
+    border: solid 2px var(--main-color);
+}
+.option-box .option-color ul li {
+    background-color: var(--main-color);
+}
+/* option-box end */
+
+
+/* about start */
+.about h2 span {
+    color: var(--main-color);
+}
+.about .lead {
+    color: #888;
+}
+/* about end */
+
+/* features start */
+.features {
+    background-color: #eee;
+}
+i {
+    color: var(--main-color);
+}
+/* features end */
+
+/* testimonials start */
+.testimonials span {
+    color: var(--main-color);
+} 
+/* overriding bootstrap */
+.testimonials .carousel-indicators [data-bs-target]:active, 
+.testimonials .carousel-indicators [data-bs-target]:focus {
+    border: solid 2px var(--main-color);
+}
+/* testimonials end */
+
+/* price start */
+.price {
+    background-color: #eee;
+}
+.price .price-box {
+    background-color: #fff;
+    border: solid 1px #ddd;
+}
+.price .price-box p {
+    color: #666;
+    background-color: #f3f3f3;
+    transition: .7s ease;    border: solid 2px #fff;
+}
+.price .price-box:hover p {
+    border: solid 2px #dfdfdf;
+}
+.btn-info,
+.btn-info:hover,
+.btn-check:focus+.btn-info, .btn-info:focus {
+    color: #fff;
+}
+/* price end */
+
+/* team start */
+.team .content {
+    background-color: rgba(0,0,0,.4);
+    color: #fff;
+}
+.team .person i {
+    color: #fff;
+}
+/* team end */
+
+/* subscribe start */
+.subscribe {
+    background-color: #eee;
+}
+.subscribe h1 {
+    color: #888;
+}
+.subscribe form button i {
+    color: #fff;
+}
+/* subscribe end */
+
+/* statistics start */
+.statistics .data {
+    background-color: rgba(0,0,0,.7);
+    color: #fff;
+}
+.statistics .data .stats, 
+.statistics .data .stats i,
+.statistics .data .stats span {
+    color: #b6b5b5;
+}
+.statistics .data .stats:hover, 
+.statistics .data .stats:hover i, 
+.statistics .data .stats:hover span {
+    color: #fff;
+}
+/* statistics end */
+
+/* contact start */
+.contact {
+    color: #ddd;
+}
+.contact i {
+    color: #fff;
+}
+.contact .form-control {
+    color: #fff;
+    background-color: rgba(82, 78, 78, 0.7);
+    border: solid 1px rgba(255, 255, 255, .1);
+}
+.contact .btn {
+    color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(148, 143, 143, 0.7);
+    border: solid 1px rgba(255, 255, 255, .1);
+}
+.contact .form-control::placeholder {
+    color: rgba(255, 255, 255, .3);
+}
+.contact .form-control:focus,
+.btn-check:active+.btn-primary:focus, .btn-check:checked+.btn-primary:focus, .btn-primary.active:focus, .btn-primary:active:focus, .show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.25rem rgb(255 255 255 / 25%);
+}
+/* contact end */
+
+/* clients start */
+.clients {
+    background-color: #eee;
+}
+/* clients end */
+
+/* footer start */
+footer {
+    background-color: #333;
+    color: #aaa;
+}
+footer a:hover {
+    color: #fff;
+}
+footer h3 {
+    color: var(--main-color);
+}
+footer .our-work .img-thumbnail {
+    border: solid 1px #666;
+}
+footer .copy span {
+    color: var(--main-color);
+}
+/* footer end */

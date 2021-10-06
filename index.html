@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- bootstrap-rtl -->
+    <link rel="stylesheet" href="css/bootstrap-rtl.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- themes -->
+    <link rel="stylesheet" href="themes/default-theme.css">
+    <!-- hover.css -->
+    <link rel="stylesheet" href="css/hover.css">
+    <title>Bootstrap template-1</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top py-1">
+        <div class="container">
+
+            <!-- brand start -->
+            <a class="navbar-brand fs-2 hvr-bounce-in" href="#">Elzero <span>Inc.</span></a>
+            <!-- brand end -->
+            <!-- toggle icon start -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button><!-- toggle icon end -->
+
+            <!-- links and search container start -->
+            <div class="collapse navbar-collapse me-auto" id="navbarSupportedContent">
+                <!-- links start -->
+                <ul class="navbar-nav ms-auto me-4 mb-2 mb-lg-0">
+                    <li class="nav-item ms-1">
+                        <a class="nav-link p-3 fs-5 active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item ms-1 dropdown">
+                        <a class="nav-link p-3 fs-5 dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <!-- dropdown links start -->
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Web Design</a></li>
+                            <li><a class="dropdown-item" href="#">App Design</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Graphic Design</a></li>
+                        </ul><!-- dropdown links end -->
+                    </li>
+                    <li class="nav-item ms-1">
+                        <a class="nav-link p-3 fs-5" href="#">FAQ</a>
+                    </li>
+                    <li class="nav-item ms-1">
+                        <a class="nav-link p-3 fs-5" href="about.html" tabindex="-1" aria-disabled="true">About</a>
+                    </li>
+                    <li class="nav-item ms-1">
+                        <a class="nav-link p-3 fs-5" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+                    </li>
+                </ul><!-- links end -->
+
+                <!-- search start -->
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form><!-- search end -->
+            </div><!-- links and search container end -->
+        </div><!-- container -->
+    </nav>
+
+    <!-- option-box start -->
+    <section class="option-box">
+        <i class="fas fa-cog gear fa-2x"></i>
+        <div class="option-color">
+            <h5>Color Option</h5>
+            <ul class="list-unstyled d-flex gap-2">
+                <li data-value="themes/default-theme.css"></li>
+                <li data-value="themes/pink-theme.css"></li>
+                <li data-value="themes/purple-theme.css"></li>
+                <li data-value="themes/orange-theme.css"></li>
+            </ul>
+        </div><!-- option-color -->
+    </section>
+    <!-- option-box end -->
+
+    <!-- carousel start -->
+    <section class="carousel-sec">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators d-none d-md-flex">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="images/1.png" class="d-block w-100" alt="Default">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Default</h5>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="10000">
+                    <img src="images/2.png" class="d-block w-100" alt="Pink">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Pink</h5>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="10000">
+                    <img src="images/3.png" class="d-block w-100" alt="Purple">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Purple</h5>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="10000">
+                    <img src="images/4.png" class="d-block w-100" alt="Orange">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Orange</h5>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev d-none d-md-inline-block" type="button"
+                data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next d-none d-md-inline-block" type="button"
+                data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!-- carousel end -->
+
+    <!-- about start -->
+    <section class="about py-5 my-3 text-center">
+        <div class="container">
+            <h1 class="fw-bold">Meet Our New Temlate <span>Elzero Inc.</span></h1>
+            <p class="lead fs-4 mt-3">Hello Let Me Introduce Our New Template Elzero Inc. reated With All Love With
+                <strong>Bootstrap 5.0</strong>
+            </p>
+        </div><!-- container -->
+    </section>
+    <!-- about end -->
+
+    <!-- features start -->
+    <section class="features py-4 text-center">
+        <div class="container">
+
+            <h2 class="fw-bold mb-5 mt-3 h1">Our Features</h2>
+
+            <div class="row py-3">
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="feat">
+                        <i class="fas fa-check fa-2x mb-3"></i>
+                        <h4>100% Responsive</h4>
+                        <p class="lh-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, fugit
+                            commodi odio quia inventore, necessitatibus quas accusamus perferendis illo cupiditate
+                            mollitia</p>
+                    </div><!-- feat -->
+                </div><!-- col -->
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="feat">
+                        <i class="far fa-thumbs-up fa-2x mb-3"></i>
+                        <h4>Retina Ready</h4>
+                        <p class="lh-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, fugit
+                            commodi odio quia inventore, necessitatibus quas accusamus perferendis illo cupiditate
+                            mollitia</p>
+                    </div><!-- feat -->
+                </div><!-- col -->
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="feat">
+                        <i class="far fa-eye fa-2x mb-3"></i>
+                        <h4>Awesome Display</h4>
+                        <p class="lh-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, fugit
+                            commodi odio quia inventore, necessitatibus quas accusamus perferendis illo cupiditate
+                            mollitia</p>
+                    </div><!-- feat -->
+                </div><!-- col -->
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="feat">
+                        <i class="fas fa-pencil-alt fa-2x mb-3"></i>
+                        <h4>Well Documented</h4>
+                        <p class="lh-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, fugit
+                            commodi odio quia inventore, necessitatibus quas accusamus perferendis illo cupiditate
+                            mollitia</p>
+                    </div><!-- feat -->
+                </div><!-- col -->
+            </div><!-- row -->
+
+        </div><!-- container-->
+    </section>
+    <!-- features end -->
+
+    <!-- testimonials start -->
+    <section class="testimonials text-center py-5">
+        <div class="container">
+            <h2 class="fw-bold mb-4 h1">What Our Clients Say</h2>
+
+            <!-- carousel testimonials start -->
+            <div id="carouseltestimonials" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <p class="lead lh-lg my-2">The greatest glory in living lies not in never falling, but in rising
+                            every time we fall.</p>
+                        <span class="fw-bold">Mostafa</span>
+                    </div><!-- carousel-item -->
+                    <div class="carousel-item" data-bs-interval="10000">
+                        <p class="lead lh-lg my-2">If life were predictable it would cease to be life, and be without
+                            flavo.r
+                        </p>
+                        <span class="fw-bold">Mohamed</span>
+                    </div><!-- carousel-item -->
+                    <div class="carousel-item" data-bs-interval="10000">
+                        <p class="lead lh-lg my-2">If you look at what you have in life, you'll always have more. If you
+                            look
+                            at what you don't have in life, you'll never have enough.</p>
+                        <span class="fw-bold">Ahmed</span>
+                    </div><!-- carousel-item -->
+                    <div class="carousel-item" data-bs-interval="10000">
+                        <p class="lead lh-lg my-2">If you set your goals ridiculously high and it's a failure, you will
+                            fail
+                            above everyone else's success.</p>
+                        <span class="fw-bold">Alaa</span>
+                    </div><!-- carousel-item -->
+                </div><!-- carousel-inner -->
+
+                <div class="carousel-indicators d-none d-md-flex">
+                    <button type="button" data-bs-target="#carouseltestimonials" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1">
+                        <img src="images/person1.jpg" alt="person1">
+                    </button>
+                    <button type="button" data-bs-target="#carouseltestimonials" data-bs-slide-to="1"
+                        aria-label="Slide 2">
+                        <img src="images/person2.jpg" alt="person2">
+                    </button>
+                    <button type="button" data-bs-target="#carouseltestimonials" data-bs-slide-to="2"
+                        aria-label="Slide 3">
+                        <img src="images/person3.jpg" alt="person3">
+                    </button>
+                    <button type="button" data-bs-target="#carouseltestimonials" data-bs-slide-to="3"
+                        aria-label="Slide 4">
+                        <img src="images/person4.jpg" alt="person4">
+                    </button>
+                </div><!-- indicators -->
+            </div><!-- carousel -->
+            <!-- carousel testimonials end -->
+        </div><!-- container -->
+
+    </section>
+    <!-- testimonials end -->
+
+    <!-- price start -->
+    <section class="price text-center py-5">
+        <div class="container">
+            <h2 class="fw-bold h1">Our Amazing Prices</h2>
+
+            <div class="row my-5">
+                <div class="col-lg-3 col-sm-6 col-xs-12">
+                    <div class="price-box mb-3">
+                        <h3 class="mb-4 text-primary">Hosting</h3>
+                        <p class=" fs-4 fw-bold">40$</p>
+                        <ul class="list-unstyled fs-5">
+                            <li>space: 30GB</li>
+                            <li>Emails: 20</li>
+                            <li>Ips: 2 ip</li>
+                            <li>Databases: 10</li>
+                            <li>FTP Accounts: 5</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary mb-1">Order Now</a>
+                    </div><!-- price-box -->
+                </div><!-- col -->
+                <div class="col-lg-3 col-sm-6 col-xs-12">
+                    <div class="price-box mb-3">
+                        <h3 class="mb-4 text-success">Vps</h3>
+                        <p class=" fs-4 fw-bold">50$</p>
+                        <ul class="list-unstyled fs-5">
+                            <li>space: 50GB</li>
+                            <li>Emails: 30</li>
+                            <li>Ips: 5 ip</li>
+                            <li>Databases: 20</li>
+                            <li>FTP Accounts: 10</li>
+                        </ul>
+                        <a href="#" class="btn btn-success mb-1">Order Now</a>
+                    </div><!-- price-box -->
+                </div><!-- col -->
+                <div class="col-lg-3 col-sm-6 col-xs-12">
+                    <div class="price-box mb-3">
+                        <h3 class="mb-4 text-info">Dedicated</h3>
+                        <p class=" fs-4 fw-bold">70$</p>
+                        <ul class="list-unstyled fs-5">
+                            <li>space: 80GB</li>
+                            <li>Emails: 40</li>
+                            <li>Ips: 8 ip</li>
+                            <li>Databases: 30</li>
+                            <li>FTP Accounts: 20</li>
+                        </ul>
+                        <a href="#" class="btn btn-info mb-1">Order Now</a>
+                    </div><!-- price-box -->
+                </div><!-- col -->
+                <div class="col-lg-3 col-sm-6 col-xs-12">
+                    <div class="price-box mb-3">
+                        <h3 class="mb-4 text-danger">Cloud</h3>
+                        <p class=" fs-4 fw-bold">90$</p>
+                        <ul class="list-unstyled fs-5">
+                            <li>space: 90GB</li>
+                            <li>Emails: 50</li>
+                            <li>Ips: 10 ip</li>
+                            <li>Databases: 50</li>
+                            <li>FTP Accounts: 50</li>
+                        </ul>
+                        <a href="#" class="btn btn-danger mb-1">Order Now</a>
+                    </div><!-- price-box -->
+                </div><!-- col -->
+            </div><!-- row -->
+        </div><!-- container -->
+    </section>
+    <!-- price end -->
+
+    <!-- team start -->
+    <section class="team text-center">
+        <div class="content py-4">
+            <div class="container">
+                <h2 class="fw-bold mt-4 h1">Meat Our Awesome Team</h2>
+
+                <div class="row mt-3">
+                    <div class="col-lg-3 col-sm-6 col-xs-12">
+                        <div class="person my-5">
+                            <img class="rounded-circle" src="images/person1.jpg" alt="person1">
+                            <h3 class="my-4">Mostafa</h3>
+                            <p>Currently learning Frontend and Future Fullstack Developer</p>
+                            <i class="fab fa-google"></i>
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-youtube"></i>
+                        </div><!-- person -->
+                    </div><!-- col -->
+
+                    <div class="col-lg-3 col-sm-6 col-xs-12">
+                        <div class="person my-5">
+                            <img class="rounded-circle" src="images/person2.jpg" alt="person2">
+                            <h3 class="my-4">Mohamed</h3>
+                            <p>Currently learning Frontend and Future Fullstack Developer</p>
+                            <i class="fab fa-google"></i>
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-youtube"></i>
+                        </div><!-- person -->
+                    </div><!-- col -->
+
+                    <div class="col-lg-3 col-sm-6 col-xs-12">
+                        <div class="person my-5">
+                            <img class="rounded-circle" src="images/person3.jpg" alt="person3">
+                            <h3 class="my-4">Ahmed</h3>
+                            <p>Currently learning Ai and Future Data Scientist</p>
+                            <i class="fab fa-google"></i>
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-youtube"></i>
+                        </div><!-- person -->
+                    </div><!-- col -->
+
+                    <div class="col-lg-3 col-sm-6 col-xs-12">
+                        <div class="person my-5">
+                            <img class="rounded-circle" src="images/person4.jpg" alt="person4">
+                            <h3 class="my-4">Elzero</h3>
+                            <p>Our Great Teacher, We Owe Him Much In this Career</p>
+                            <i class="fab fa-google"></i>
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-youtube"></i>
+                        </div><!-- person -->
+                    </div><!-- col -->
+
+                </div><!-- row -->
+            </div><!-- container -->
+        </div><!-- content -->
+    </section>
+    <!-- team end -->
+
+    <!-- subscribe start -->
+    <section class="subscribe text-center py-5">
+        <div class="container">
+            <h2 class="mb-4 fw-bold h1">Keep In Touch</h2>
+            <p class="lead">Sign Up For Newsletter, Don't Worry About Spam We Hate It Too</p>
+            <form class="mt-4">
+                <div class="row justify-content-center">
+                    <div class="col-auto px-0">
+                        <input type="text" class="form-control form-control-lg" placeholder="Write Your Email">
+                    </div><!-- col -->
+                    <div class="col-auto">
+                        <button class="btn btn-danger btn-lg"><i class="fas fa-edit me-2"></i>Subscribe</button>
+                    </div><!-- col -->
+                </div><!-- row -->
+            </form>
+        </div><!-- container -->
+    </section>
+    <!-- subscribe end -->
+
+    <!-- statistics start -->
+    <section class="statistics text-center">
+        <div class="data py-5">
+            <div class="container">
+                <h2 class="fw-bold h1">Our Main Statistics</h2>
+
+                <div class="row mt-5 py-4">
+                    <div class="col-lg-3 col-md-6 col-xs-12 mb-5">
+                        <div class="stats">
+                            <i class="fas fa-users fa-6x"></i>
+                            <p class="fs-1 fw-bold mb-1 mt-4">9,550</p>
+                            <span class="fs-5">Satisfied Users</span>
+                        </div><!-- stats -->
+                    </div><!-- col -->
+
+                    <div class="col-lg-3 col-md-6 col-xs-12 mb-5">
+                        <div class="stats">
+                            <i class="fas fa-comments fa-6x"></i>
+                            <p class="fs-1 fw-bold mb-1 mt-4">25,600</p>
+                            <span class="fs-5">Posted Comments</span>
+                        </div><!-- stats -->
+                    </div><!-- col -->
+
+                    <div class="col-lg-3 col-md-6 col-xs-12 mb-5">
+                        <div class="stats">
+                            <i class="fas fa-suitcase fa-6x"></i>
+                            <p class="fs-1 fw-bold mb-1 mt-4">3,260</p>
+                            <span class="fs-5">Projects Done</span>
+                        </div><!-- stats -->
+                    </div><!-- col -->
+
+                    <div class="col-lg-3 col-md-6 col-xs-12 mb-5">
+                        <div class="stats">
+                            <i class="fas fa-life-ring fa-6x"></i>
+                            <p class="fs-1 fw-bold mb-1 mt-4">95,350</p>
+                            <span class="fs-5">Tickets Archieved</span>
+                        </div><!-- stats -->
+                    </div><!-- col -->
+                </div><!-- row -->
+            </div><!-- container -->
+        </div><!-- data -->
+    </section>
+    <!-- statistics end -->
+
+    <!-- skills start -->
+    <section class="skills py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5 my-2 h1">Our Skills</h2>
+
+            <div class="row">
+                <div class="col-md-5 py-2 mb-4">
+                    <!-- progress-bars start -->
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated fw-bold text-start"
+                            role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
+                            style="width: 90%;">HTML / CSS</div>
+                    </div><!-- progress-bar 1 -->
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated fw-bold text-start"
+                            role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
+                            style="width: 50%;">JAVASCRIPT / JQUERY</div>
+                    </div><!-- progress-bar 1 -->
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated fw-bold text-start"
+                            role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"
+                            style="width: 30%;">PHP / MYSQL</div>
+                    </div><!-- progress-bar 1 -->
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-info progress-bar-striped progress-bar-animated fw-bold text-start"
+                            role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                            style="width: 70%;">WORDPRESS</div>
+                    </div><!-- progress-bar 1 -->
+                    <!-- progress-bars end -->
+                </div><!-- col -->
+
+                <div class="col-md-6 offset-md-1">
+                    <!-- progress-info start -->
+                    <div class="skills-info">
+                        <h3 class="fw-bold mt-0">About The Team</h3>
+                        <p class="lead">We Are Specialized Design And Programming Team Passionate About Web Design And
+                            Creating Ideas, We Will Transform Your Idea Into A Digital Form And Bring Your Idea To Life.
+                        </p>
+                        <button type="button" class="btn btn-primary">Talk With Proffessionals</button>
+                    </div>
+                    <!-- skills-info end -->
+                </div><!-- col -->
+            </div><!-- row -->
+        </div><!-- container -->
+    </section>
+    <!-- skills end -->
+
+    <!-- contact start -->
+    <section class="contact text-center py-5">
+        <div class="container">
+            <i class="fas fa-headphones-alt fa-5x mb-4"></i>
+            <h2 class="fw-bold mb-3 h1">Tell Us What You Think</h2>
+            <p class="lead">Feel Free To Contact Us Anytime</p>
+
+            <form class="my-5">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <input type="text" class="form-control form-control-lg mb-3 mx-auto" placeholder="UserName">
+                        <input type="text" class="form-control form-control-lg mb-3 mx-auto" placeholder="Email">
+                        <input type="text" class="form-control form-control-lg mx-auto" placeholder="Phone Number">
+                    </div><!-- col -->
+                    <div class="col-md-5">
+                        <textarea name="textarea" class="form-control form-control-lg"
+                            placeholder="Your Message"></textarea>
+                        <div class="d-grid mt-2">
+                            <button class="btn btn-primary btn-lg btn-">Submit</button>
+                        </div>
+                    </div><!-- col -->
+                </div><!-- row -->
+            </form>
+        </div><!-- container -->
+    </section>
+    <!-- contact end -->
+
+    <!-- clients start -->
+    <section class="clients pt-3 pb-2">
+        <div class="container">
+            <ul class="list-unstyled">
+                <div class="row">
+                    <li class="col-md-2 col-sm-4 col-xs-6 my-3"><img src="images/clients/client1.png" alt="client1">
+                    </li>
+                    <li class="col-md-2 col-sm-4 col-xs-6 my-3"><img src="images/clients//client2.png" alt="client2">
+                    </li>
+                    <li class="col-md-2 col-sm-4 col-xs-6 my-3"><img src="images/clients//client3.png" alt="client3">
+                    </li>
+                    <li class="col-md-2 col-sm-4 col-xs-6 my-3"><img src="images/clients//client4.png" alt="client4">
+                    </li>
+                    <li class="col-md-2 col-sm-4 col-xs-6 my-3"><img src="images/clients//client5.png" alt="client5">
+                    </li>
+                    <li class="col-md-2 col-sm-4 col-xs-6 my-3"><img src="images/clients//client6.png" alt="client6">
+                    </li>
+                </div><!-- row -->
+            </ul>
+        </div><!-- container -->
+    </section>
+    <!-- clients end -->
+
+    <!-- footer start -->
+    <footer class="pt-5 pb-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 first mb-4">
+                    <h3 class="mb-4">Sitemap</h3>
+                    <ul class="sitemap list-unstyled">
+                        <li class="mb-1">Home</li>
+                        <li class="mb-1">Company</li>
+                        <li class="mb-1">Code</li>
+                        <li class="mb-1">Design</li>
+                        <li class="mb-1">Host</li>
+                        <li class="mb-1">Sitemap</li>
+                        <li class="mb-1">Home</li>
+                        <li class="mb-1">Contact</li>
+                    </ul>
+
+                    <!-- icons -->
+                    <div class="icons mt-4">
+                        <div class="d-flex justify-content-between">
+                            <img src="images/social/facebook.png" alt="facebook" class="mb-3">
+                            <img src="images/social/whatsapp.png" alt="whatsapp" class="mb-3">
+                            <img src="images/social/twitter.png" alt="twitter" class="mb-3">
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <img src="images/social/telegram.png" alt="telegram" class="mb-3">
+                            <img src="images/social/linkedin.png" alt="linkedin" class="mb-3">
+                            <img src="images/social/instagram.png" alt="instagram" class="mb-3">
+                        </div>
+                    </div>
+                </div><!-- col first -->
+
+                <div class="col-lg-6 second mb-4">
+                    <h3 class="mb-4">Latest Articles</h3>
+                    <div class="media d-flex">
+                        <img src="images/footer/programing.png" alt="programing" class="me-4">
+                        <div class="txt">
+                            <h5>Programming</h5>
+                            <p>This is some text about programming describes bootstrap 5.0</p>
+                        </div><!-- txt -->
+                    </div><!-- media -->
+
+                    <div class="media d-flex">
+                        <img src="images/footer/coding.png" alt="programing" class="me-4">
+                        <div class="txt">
+                            <h5>Coding</h5>
+                            <p>This is some text about programming describes bootstrap 5.0</p>
+                        </div><!-- txt -->
+                    </div><!-- media -->
+
+                    <div class="media d-flex">
+                        <img src="images/footer/web-design.png" alt="programing" class="me-4">
+                        <div class="txt">
+                            <h5>Web Design</h5>
+                            <p>This is some text about programming describes bootstrap 5.0</p>
+                        </div><!-- txt -->
+                    </div><!-- media -->
+                </div><!-- col second -->
+
+                <div class="col-lg-3 third our-work">
+                    <h3 class="mb-4">Our Work</h3>
+                    <div class="row gap-1">
+                        <div class="col-5">
+                            <img src="images/footer/our-work-1.png" alt="our-work-1" class="img-thumbnail mb-3">
+                            <img src="images/footer/our-work-2.png" alt="our-work-2" class="img-thumbnail mb-3">
+                        </div>
+                        <div class="col-5">
+                            <img src="images/footer/our-work-3.png" alt="our-work-3" class="img-thumbnail mb-3">
+                            <img src="images/footer/our-work-4.png" alt="our-work-4" class="img-thumbnail mb-3">
+                        </div>
+                    </div><!-- row -->
+                </div><!-- col third -->
+            </div><!-- row -->
+
+            <p class="text-center copy mt-4">copyright <span>&copy;</span> 2021 created by <span class="fs-5">Mostafa
+                    Taha</span></p>
+        </div><!-- container -->
+    </footer>
+    <!-- footer end -->
+
+
+
+
+    <!--  bootstrap files  -->
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <!--  bootstrap files  -->
+</body>
+
+</html>
